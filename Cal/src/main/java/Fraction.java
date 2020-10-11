@@ -61,9 +61,6 @@ public class Fraction {
         if (this.denominator==1) {
             return String.valueOf(numerator);
         }
-        if (this.numerator==0) {
-            return String.valueOf(numerator);
-        }
         else if(this.numerator>this.denominator) {
             int c=0;
             c=this.numerator/this.denominator;
@@ -107,7 +104,7 @@ public class Fraction {
     */
     public boolean JudgeNum() {
         if(numerator==0){
-        return true;}
+            return true;}
         else return false;
 
     }
@@ -131,7 +128,7 @@ public class Fraction {
     定义四则运算
      */
     public Fraction add(Fraction s1, Fraction s2){
-       Fraction p = new Fraction();
+        Fraction p = new Fraction();
         p.numerator = s1.numerator*s2.denominator + s1.denominator*s2.numerator;
         p.denominator = s1.denominator*s2.denominator;
         return simplify(p);
