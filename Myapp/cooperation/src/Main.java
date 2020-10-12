@@ -67,11 +67,13 @@ public class Main {
                 answersfile=".\\Answers.txt";
                 judgegrade.check(exercisesfile,answersfile);
                 System.out.println("已为您批改答案，批改文件Grade.txt已生成，放置在本程序的当前目录下，请及时校对答案。");
+                System.out.println("请及时保存文件，再次使用程序时上一次生成的文件会被覆盖");
+                System.exit(0);
             }
-            System.out.println("请及时保存文件，再次使用程序时上一次生成的文件会被覆盖");
-            //归零
+
+            /*//归零
             n=0;
-            r=0;
+            r=0;*/
         }
 
     }
